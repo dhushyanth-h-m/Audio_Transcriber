@@ -56,7 +56,6 @@ app.post('/transcribe', upload.single('audio'), async (req, res) => {
     };
 
     const finalResult = await getTranscriptionResult(transcriptResponse.data.id);
-    // res.json(finalResult);
     res.render('transcription', { transcription: finalResult.text });
   } catch (error) {
     console.error(error);
