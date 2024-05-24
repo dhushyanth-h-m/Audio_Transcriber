@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Audio for Transcription</title>
+</head>
+<body>
+  <h1>Upload Audio File</h1>
+  <form action="/transcribe" method="post" enctype="multipart/form-data">
+    <input type="file" name="audio" required>
+    <button type="submit">Transcribe Audio</button>
+  </form>
+</body>
+</html>
+
